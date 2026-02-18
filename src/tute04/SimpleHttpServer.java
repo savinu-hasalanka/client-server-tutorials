@@ -71,7 +71,7 @@ public class SimpleHttpServer {
 
             // TODO: Task 22: Send response headers using exchange.sendResponseHeaders
             // TODO: Task 23: Use status code 200 and response.length() for the headers
-            exchange.sendResponseHeaders(200, 27);
+            exchange.sendResponseHeaders(200, response.length());
 
             // TODO: Task 24: Open a try-with-resources block to get the output stream: exchange.getResponseBody()
             try (OutputStream os = exchange.getResponseBody()) {
